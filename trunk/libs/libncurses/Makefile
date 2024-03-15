@@ -12,7 +12,7 @@ download_test:
 extract_test:
 	( if [ ! -d $(SRC_NAME) ]; then \
 		unzip -qq $(SRC_NAME).zip ; \
-		patch -p1 -d $(SRC_NAME) < $(SRC_NAME).patch ; \
+		#patch -p1 -d $(SRC_NAME) < $(SRC_NAME).patch ; \
 	fi )
 
 config_test:
